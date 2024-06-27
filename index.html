@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+    <section class="container">
+        <h1 class="fw-bold m-5 text-muted">BookMarker</h1>
+        <hr />
+        <div class="content bg-body-secondary mx-auto text-center p-4">
+            <h2 class="">BookMark Your Favourite Sites</h2>
+            <div class="m-3">
+                <label class="text-center fw-bold p-3" for="siteName">Site Name</label>
+                <input oninput="siteNameVal()" class="form-control" id="siteName" type="text" placeholder="BookMark Name">
+            </div>
+            <div class="m-3">
+                <label class="text-center fw-bold p-3" for="siteURL">Site URL</label>
+                <input  oninput="siteURLVal()" class="form-control" id="siteURL" type="text" placeholder="Website URL">
+            </div>
+            <button id="Submit" class="btn btn-outline-primary" >Submit</button>
+            <button id="UPbtn" onclick="UpdateIndex();" class="btn btn-outline-primary d-none" >Update</button>
+        </div>
+        <input oninput="Search(this.value)" class="form-control my-5" id="search" type="text" placeholder="Search By BookMark Name....">
+        <table class="table table-group-divider table-secondary ">
+            <thead>
+                <th>index</th>
+                <th>BookMark Name</th>
+                <th>Visit Website</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="cartona"></tbody>
+        </table>
+    </section>
+
+    
+    
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
